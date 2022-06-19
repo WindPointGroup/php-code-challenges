@@ -1,4 +1,4 @@
-#PHP Code Challenges
+##PHP Code Challenges
 Here you will find source code and solutions to all of the PHP coding challenging we've done. Each challenge with have it's own README with the problem and solution explanation. There is also a folder called `assets` which has some input files used for the challenges. 
 
 ## Challenge List
