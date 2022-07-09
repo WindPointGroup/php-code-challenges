@@ -47,10 +47,10 @@ $wageEntry = new WageEntry($hourly_wage, $hours);
 
 <form>
     <label class="form-element">Hourly Wage</label>
-    <input class="form-element mb-25" type="number" name="hourly_wage" id="hourly_wage" step="0.01" value="<?php echo $hourly_wage; ?>"/>
+    <input class="form-element mb-25" type="number" name="hourly_wage" id="hourly_wage" step="0.01" value="<?php echo $wageEntry->hourly_wage; ?>"/>
 
     <label class="form-element">Hours</label>
-    <input class="form-element mb-25" type="number" name="hours" id="hours" step="0.01"  value="<?php echo $hours; ?>"/>
+    <input class="form-element mb-25" type="number" name="hours" id="hours" step="0.01"  value="<?php echo $wageEntry->hours; ?>"/>
 
     <button class="form-element mb-25">Calculate</button>
 
