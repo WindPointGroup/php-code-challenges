@@ -20,12 +20,12 @@ class StockData{
 
     function __construct($data) {
         // set data
-        $this->date = $data[self::CSV_INDEX_DATE];
-        $this->open = $data[self::CSV_INDEX_OPEN];
-        $this->high = $data[self::CSV_INDEX_HIGH];
-        $this->low = $data[self::CSV_INDEX_LOW];
-        $this->close = $data[self::CSV_INDEX_CLOSE];
-        $this->volume = $data[self::CSV_INDEX_VOLUME];
+        $this->date = array_key_exists(self::CSV_INDEX_DATE, $data) ? $data[self::CSV_INDEX_DATE] : null;
+        $this->open = array_key_exists(self::CSV_INDEX_OPEN, $data) ? $data[self::CSV_INDEX_OPEN] : null;
+        $this->high = array_key_exists(self::CSV_INDEX_HIGH, $data) ? $data[self::CSV_INDEX_HIGH] : null;
+        $this->low = array_key_exists(self::CSV_INDEX_LOW, $data) ? $data[self::CSV_INDEX_LOW] : null;
+        $this->close = array_key_exists(self::CSV_INDEX_CLOSE, $data) ? $data[self::CSV_INDEX_CLOSE] : null;
+        $this->volume = array_key_exists(self::CSV_INDEX_VOLUME, $data) ? $data[self::CSV_INDEX_VOLUME] : null;
     }
 
     function dailyRange(){
